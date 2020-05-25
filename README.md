@@ -41,6 +41,10 @@ As a User
 So that I can stay constantly tapped in to the shouty box of Chitter
 I want to receive an email if I am tagged in a Peep
 
+As a Uswer, 
+In order to start a conversation,
+I want to reply to a peep from another maker.
+
 ```
 Notes on functionality
 ------
@@ -52,6 +56,25 @@ Set-up
 --------
 1. bundle install
 2. set up production & test databases
+
+Primary goal
+--------
+Write a frontend, single page app using only pure JavaScript?
+- As part of this primary goal, a sub-goal should be that you are able to explain and give an example of asynchronous behaviour in Javascript
+
+Secondary goal
+--------
+To help towards the primary goal, the secondary goal is to produce a diagram of how all the parts of your notes app interact.
+- Update the diagram with your latest understanding. Your diagram might include: model, view, controller, external API, browser page, unit tests, feature tests, static server, node, XMLHttpRequest, the DOM.
+
+Concepts
+--------
+Frontend, single page web apps.
+Events and event handlers.
+Manipulating the Document Object Model (DOM).
+Ajax.
+Frontend templating.
+Frontend routing.
 
 Learnings
 --------
@@ -71,9 +94,9 @@ Steps
 
 Technical Approach
 -----
-This week you integrated a database into Bookmark Manager using the `PG` gem and `SQL` queries. You can continue to use this approach when building Chitter Challenge.
+You can integrate a database into Bookmark Manager using the `PG` gem and `SQL` queries. 
 
-If you'd like more technical challenge this weekend, try using an [Object Relational Mapper](https://en.wikipedia.org/wiki/Object-relational_mapping) as the database interface.
+If you'd like more technical challenge, try using an [Object Relational Mapper](https://en.wikipedia.org/wiki/Object-relational_mapping) as the database interface.
 
 Some useful resources:
 **DataMapper**
@@ -83,15 +106,6 @@ Some useful resources:
 **ActiveRecord**
 - [ActiveRecord ORM](https://guides.rubyonrails.org/active_record_basics.html)
 - [Sinatra, PostgreSQL & ActiveRecord recipe](http://recipes.sinatrarb.com/p/databases/postgresql-activerecord?#article)
-
-Bonus:
------
-
-If you have time you can implement the following:
-* In order to start a conversation as a maker I want to reply to a peep from another maker.
-
-And/Or:
-* Work on the CSS to make it look good.
 
 Code Review
 -----------
