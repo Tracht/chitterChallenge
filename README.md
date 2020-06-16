@@ -31,7 +31,7 @@ Technologies used
 Steps to run on your local
 --------
 * create a project directory in which to fork/clone this project's repo
-* inside that directory, run the command ```bundle install```
+* inside that directory, run the command ```npm install```
 * to start the browser, run the command ```npm start```
 * open http://localhost:3000 to view the app in the browser
 
