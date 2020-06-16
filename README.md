@@ -23,10 +23,17 @@ Planning
 * [User stories](https://github.com/Tracht/chitterChallengeJavaScript/wiki/User-stories)
 * [Diagramming]()
 
+Technologies used
+-------
+* [React Single Page App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)
+* I used the Create React App framework so that I can use it with any backend. It just creates a simple frontend build pipeline. 
+
 Steps to run on your local
 --------
-* tbd ... 
-* bundle install
+* create a project directory in which to fork/clone this project's repo
+* inside that directory, run the command ```bundle install```
+* to start the browser, run the command ```npm start```
+* open http://localhost:3000 to view the app in the browser
 
 Concepts
 --------
