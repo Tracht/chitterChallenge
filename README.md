@@ -1,4 +1,4 @@
-Chitter Challenge
+TWitter Challenge
 =================
 Note
 ------
