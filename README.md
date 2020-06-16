@@ -6,10 +6,17 @@ This App is not finished!
 
 Challenge
 -------
-* Write a small Twitter clone
-* Functionality:
-* Users sign up to chitter with their email, password, name and username.
-* Tweets include the user's user handle and time posted.
+Build a front-end single-page-app to interface with this API. You can do this in any framework you like, or in pure Javascript.
+[The API documentation is here](https://github.com/makersacademy/chitter_api_backend). 
+The API supports the following interactions:
+* Creating Users
+* Logging in
+* Posting Peeps
+* Viewing all Peeps
+* Viewing individual Peeps
+* Deleting Peeps
+* Liking Peeps
+* Unliking Peeps
 
 Planning
 -------
