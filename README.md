@@ -1,4 +1,4 @@
-TWitter Challenge
+Twitter Challenge
 =================
 Note
 ------
