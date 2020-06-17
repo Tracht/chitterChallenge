@@ -33,6 +33,7 @@ Steps to run on your local
 * create a project directory in which to fork/clone this project's repo
 * inside that directory, run the command ```npm install```
 * to start the browser, run the command ```npm start```
+* to run the tests, make sure the browser is open and then run the command ``` npx cypress open``` 
 * open http://localhost:3000 to view the app in the browser
 
 Concepts
