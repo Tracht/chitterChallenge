@@ -1,5 +1,6 @@
 import React from 'react';
 import './test.css';
+import './index.css';
 
 class Tweets extends React.Component {
 
@@ -32,15 +33,13 @@ class Tweets extends React.Component {
     return ( 
     <div class="twitter-posts">
 
-      <h1> Hello there! </h1>
-
         {data.map((post) => {
           return(
             <section class="tweet-card" key={post.id}> 
-              <p> {post.user.handle} tweeted </p>
-              <p> {post.body} </p> 
-              <p> originally posted on {post.created_at} </p>
-              <p> post updated at {post.updated_at} </p>
+              <p class="user-handle"> {post.user.handle} tweeted </p>
+              <p class="post-body"> {post.body} </p> 
+              <p class="created-on-date"> originally posted on {post.created_at} </p>
+              <p class="updated-on-date"> post updated at {post.updated_at} </p>
               {/* <p> { numOfLikes } likes </p> */}
             </section>
             )

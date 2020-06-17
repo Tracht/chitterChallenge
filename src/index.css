@@ -7,7 +7,46 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.twitter-posts {
+  width: 50%;
+}
+
+.tweet-card {
+  background-color: #38A1F3;
+  color: #F2F2F2; 
+  border-radius: 3px;
+  padding: 10px;
+  margin: 15px; 
+  border: 1px solid #38A1F3;
+}
+
+.user-handle {
+  font-size: 15px;
+  color: white;
+}
+
+.post-body {
+  font-size: 20px;
+  color: white;
+}
+
+.created-on-date {
+  font-size: 10px;
+  text-align: right;
+}
+
+.updated-on-date {
+  font-size: 10px;
+  text-align: right;
+}
+
+.welcome-message {
+  color: yellow;
 }
