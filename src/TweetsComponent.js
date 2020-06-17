@@ -6,25 +6,44 @@ class Tweets extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null,
+      posts: [],
     };
   }
 
   componentDidMount() {
-    fetch('https://chitter-backend-api-v2.herokuapp.com/peeps')
+    this.fetchData(`https://chitter-backend-api-v2.herokuapp.com/peeps`);
+  }
+
+  fetchData = (apiToFetch) => {
+    fetch(apiToFetch)
     .then(response => response.json())
-    .then(data => this.setState({ data }));
+    .then((data) => {
+      this.setState({
+        posts: data,
+      });
+    });
   }
 
   render() {
-    
-    const { data } = this.state;
+    let data = this.state.posts;
+    // let numOfLikes = data.likes.length();
+    // let data = this.state.posts;
 
-    return ( <div>
-     <h1> Hello there! </h1>
+    return ( 
+    <div class="twitter-posts">
 
-     <p> {data.body} </p>
-     <p> {data.user.handle} posted on {data.updated_at} </p>
+      <h1> Hello there! </h1>
+
+        {data.map((post) => {
+          return(
+            <section class="tweet-card" key={post.id}> 
+              <p> {post.body} </p> 
+              <p> - {post.handle} - posted on {post.updated_at} </p>
+              {/* <p> { numOfLikes } likes </p> */}
+            </section>
+            )
+          })
+        }
 
     </div>
     

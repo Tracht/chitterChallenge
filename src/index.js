@@ -7,11 +7,6 @@ import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
-  <Tweets />,
-  document.getElementById('tweets'),
-);
-
-ReactDOM.render(
   <React.StrictMode>
     <Homepage />
   </React.StrictMode>,
