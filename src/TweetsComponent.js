@@ -39,7 +39,6 @@ class Tweets extends React.Component {
               <p class="likes"> Likes: { post.likes.length } </p>
               <p class="created-on-date"> posted on {post.created_at} </p>
               <p class="updated-on-date"> updated at {post.updated_at} </p>
-             
             </section>
             )
           })
