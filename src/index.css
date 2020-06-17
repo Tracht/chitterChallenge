@@ -1,3 +1,4 @@
+/* Global */ 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,13 +8,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Homepage Component */ 
+/* Responsive layout - makes three columns stack */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
   }
 }
 
+
+/* Tweets Component */ 
 .twitter-posts {
   width: 50%;
 }
