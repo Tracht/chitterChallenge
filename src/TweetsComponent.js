@@ -37,8 +37,10 @@ class Tweets extends React.Component {
         {data.map((post) => {
           return(
             <section class="tweet-card" key={post.id}> 
+              <p> {post.user.handle} tweeted </p>
               <p> {post.body} </p> 
-              <p> - {post.handle} - posted on {post.updated_at} </p>
+              <p> originally posted on {post.created_at} </p>
+              <p> post updated at {post.updated_at} </p>
               {/* <p> { numOfLikes } likes </p> */}
             </section>
             )
