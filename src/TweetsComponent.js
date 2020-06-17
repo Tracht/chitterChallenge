@@ -27,8 +27,6 @@ class Tweets extends React.Component {
 
   render() {
     let data = this.state.posts;
-    // let numOfLikes = data.likes.length();
-    // let data = this.state.posts;
 
     return ( 
     <div class="twitter-posts">
@@ -38,9 +36,10 @@ class Tweets extends React.Component {
             <section class="tweet-card" key={post.id}> 
               <p class="user-handle"> {post.user.handle} tweeted </p>
               <p class="post-body"> {post.body} </p> 
-              <p class="created-on-date"> originally posted on {post.created_at} </p>
-              <p class="updated-on-date"> post updated at {post.updated_at} </p>
-              {/* <p> { numOfLikes } likes </p> */}
+              <p class="likes"> Likes: { post.likes.length } </p>
+              <p class="created-on-date"> posted on {post.created_at} </p>
+              <p class="updated-on-date"> updated at {post.updated_at} </p>
+             
             </section>
             )
           })
