@@ -1,16 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Homepage from './HomepageComponent';
+import HomepageHeader from './HomepageHeaderComponent';
 import Tweets from './TweetsComponent';
+import User from './UserComponent';
 import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Homepage />
+    <HomepageHeader />
   </React.StrictMode>,
-  document.getElementById('homepage'),
+  document.getElementById('homepage-header'),
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <User />
+  </React.StrictMode>,
+  document.getElementById('user'),
 );
 
 ReactDOM.render(
@@ -19,6 +27,8 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('tweets'),
 );
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

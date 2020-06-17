@@ -1,7 +1,9 @@
 import React from 'react';
-import './test.css';
+import './index.css';
+import './UserComponent.js';
+import './TweetsComponent.js';
 
-class Homepage extends React.Component{
+class HomepageHeader extends React.Component{
 
   render() {
     return <div>
@@ -9,9 +11,10 @@ class Homepage extends React.Component{
           <img src="https://bit.ly/37wXEkG" alt="red angry bird" float="left" width="30" height="50"/>
           Welcome to Twitter 
         </h2>
+
     </div>
   }
   
 }
 
-export default Homepage;
+export default HomepageHeader;

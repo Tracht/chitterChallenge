@@ -6,15 +6,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  align-content: center;
 }
 
 /* Homepage Component */ 
-/* Responsive layout - makes three columns stack */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
 
 .homepage-header {
   background-color: #f1f1f1;
@@ -22,8 +17,17 @@ body {
   text-align: center;
 }
 
+/* User Component */ 
+.user-position {
+  background-color: #f9f1f9;
+  padding: 20px;
+  text-align: center;
+}
+
 /* Tweets Component */ 
 .twitter-posts {
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
 }
 
