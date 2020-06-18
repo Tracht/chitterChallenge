@@ -22,12 +22,6 @@ class User extends React.Component {
         password: this.state.password
       }
     }
-    
-    // console.log("Sign Up Handler 1");
-    // console.log(newSignup);
-    // console.log(this.state.message);
-    // console.log("Sign Up Handler 2");
-
     fetch('https://chitter-backend-api-v2.herokuapp.com/users', {
       method: 'post',
       headers: { 'Content-Type': 'application/json'}, 
@@ -41,9 +35,6 @@ class User extends React.Component {
           message:  "This handle is already registered, pick another."
          })
       } else {
-        // console.log(result);
-        // console.log(result.handle);
-        // console.log(result.id);
         this.setState({ 
           user: { id: result.id, handle: result.handle },
           message: `Your sign up was successful.`
@@ -51,10 +42,6 @@ class User extends React.Component {
       }
       console.log(this.state.message);
     });
-
-    // console.log("Post fetch")
-    // console.log(this.state.message)
-
     // this.cancelCourse()
   }
 
