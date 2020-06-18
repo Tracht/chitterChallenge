@@ -1,5 +1,5 @@
 describe('sign up', () => {
-  it('with unique handle & password is successful', () => {
+  it('success with unique handle & password', () => {
     cy.visit('http://localhost:3000')
     cy.get('.signup-form').find('[id="sign-up-handle"]').type('SweetBabyJesus')
     cy.get('.signup-form').find('[id="sign-up-password"]').type('12345')
@@ -9,7 +9,7 @@ describe('sign up', () => {
 })
 
 describe('sign up', () => {
-  it('with already registered handle', () => {
+  it('fail if using already registered handle', () => {
     cy.visit('http://localhost:3000')
     cy.get('.signup-form').find('[id="sign-up-handle"]').type('SweetBabyJesus')
     cy.get('.signup-form').find('[id="sign-up-password"]').type('apple')
