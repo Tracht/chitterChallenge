@@ -62,11 +62,13 @@ class User extends React.Component {
     return ( 
       <div class="user-position">
         <p class="message"> { message } </p>
-        <form action="post" class="signup-form" onSubmit={this.signupHandler}>
-          <input onChange={this.onChange} type="text" id="sign-up-handle" name="handle" value={handle} placeholder="pick a handle" ></input>
-          <input onChange={this.onChange} type="text" id="sign-up-password" name="password" value={password}placeholder="pick a password"></input>
+
+        <form class="signup-form" onSubmit={this.signupHandler}>
+          <input onChange={this.onChange} type="text" id="signup-handle" name="handle" value={handle} placeholder="pick a handle" ></input>
+          <input onChange={this.onChange} type="text" id="signup-password" name="password" value={password} placeholder="pick a password"></input>
           <input type="submit" value="Sign up"></input>
         </form>
+
       </div>
     );
   }
