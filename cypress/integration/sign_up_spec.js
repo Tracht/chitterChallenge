@@ -14,6 +14,6 @@ describe('sign up', () => {
     cy.get('.signup-form').find('[id="signup-handle"]').type('SweetBabyJesus')
     cy.get('.signup-form').find('[id="signup-password"]').type('apple')
     cy.get('.signup-form').submit();
-    cy.get('.message').should('contain', 'This handle is already registered, pick another.')
+    cy.get('.alert').should('contain', 'This handle is already registered, pick another.')
   })
 })

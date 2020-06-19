@@ -56,9 +56,9 @@ class User extends React.Component {
           alert: ""
         })
       }
-      console.log(this.state.message);
-      console.log(this.state.user.id);
-      console.log(this.state.session.session_key);
+      // console.log(this.state.message);
+      // console.log(this.state.user.id);
+      // console.log(this.state.session.session_key);
     })
     .catch((error) => { console.log(error); console.log("2") })
   }
@@ -112,27 +112,12 @@ class User extends React.Component {
 
   render() {
    
-    // const { handle, password, message } = this.state;
     const { loginHandle, loginPassword, signupHandle, signupPassword, message, alert, successMessage } = this.state;
     return ( 
       <div class="user-position">
         <p class="message"> { message } </p>
         <p class="alert"> { alert } </p>
         <p class="success-message"> { successMessage } </p>
-
-        {/* <form class="login-form" onSubmit={this.loginHandler}>
-          <input onChange={this.onChange} type="text" id="login-handle" name="loginHandle" value={loginHandle} placeholder="enter your handle" ></input>
-          <input onChange={this.onChange} type="text" id="login-password" name="loginPassword" value={loginPassword} placeholder="enter your password"></input>
-          <input type="submit" value="Login"></input>
-        </form>
-
-        <br></br>
-
-        <form class="signup-form" onSubmit={this.signupHandler}>
-          <input onChange={this.onChange} type="text" id="signup-handle" name="signupHandle" value={signupHandle} placeholder="pick a handle"></input>
-          <input onChange={this.onChange} type="text" id="signup-password" name="signupPassword" value={signupPassword} placeholder="pick a password"></input>
-          <input type="submit" value="Sign up"></input>
-        </form> */}
 
         <form class="login-form" onSubmit={this.loginHandler}>
           <input onChange={this.onFormChange} type="text" id="login-handle" name="handle" value={loginHandle} placeholder="enter your handle" ></input>
