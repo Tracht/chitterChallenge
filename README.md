@@ -9,12 +9,12 @@ Challenge
 -------
 Build a front-end single-page-app to interface with this API. [The API documentation is here](https://github.com/makersacademy/chitter_api_backend). 
 The API supports the following interactions:   
-Completed 
-* Viewing all Tweets, Creating Users, Logging in    
-In progress 
-* Logging out   
-TBD 
-* Posting Tweets, Viewing individual Tweets, Deleting Tweets, Liking Tweets, Unliking Tweets
+* Completed 
+  * View all Tweets, Create Users, Log in    
+* In progress 
+  * Log out   
+* TBD 
+  * Post Tweets, View individual Tweets, Delete Tweets, Like/Unlike Tweets
 
 Planning
 -------
