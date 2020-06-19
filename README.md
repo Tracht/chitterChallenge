@@ -1,13 +1,9 @@
 Twitter Challenge
 =================
 
-Preview
-------
-[Website Preview](https://github.com/Tracht/chitterChallenge/issues/2)
-
 Note
 ------
-This App is not finished!
+This App is not finished! [Website Preview](https://github.com/Tracht/chitterChallenge/issues/2)
 
 Challenge
 -------
