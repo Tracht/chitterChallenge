@@ -69,7 +69,8 @@ class User extends React.Component {
         this.setState({ 
           user: { id: result.id, handle: result.handle },
           successMessage: "Your sign up was successful.",
-          message: ""
+          message: "",
+          alert: ""
        })
       }
       console.log(this.state.message);
@@ -84,7 +85,7 @@ class User extends React.Component {
     document.getElementsByClassName("signup-form").reset();
   }
 
-  onChange = (event) => {
+  onFormChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value
     });
@@ -115,16 +116,16 @@ class User extends React.Component {
         </form> */}
 
         <form class="login-form" onSubmit={this.loginHandler}>
-          <input onChange={this.onChange} type="text" id="login-handle" name="handle" value={loginHandle} placeholder="enter your handle" ></input>
-          <input onChange={this.onChange} type="text" id="login-password" name="password" value={loginPassword} placeholder="enter your password"></input>
+          <input onChange={this.onFormChange} type="text" id="login-handle" name="handle" value={loginHandle} placeholder="enter your handle" ></input>
+          <input onChange={this.onFormChange} type="text" id="login-password" name="password" value={loginPassword} placeholder="enter your password"></input>
           <input type="submit" value="Login"></input>
         </form>
 
         <br></br>
 
         <form class="signup-form" onSubmit={this.signupHandler}>
-          <input onChange={this.onChange} type="text" id="signup-handle" name="handle" value={signupHandle} placeholder="pick a handle"></input>
-          <input onChange={this.onChange} type="text" id="signup-password" name="password" value={signupPassword} placeholder="pick a password"></input>
+          <input onChange={this.onFormChange} type="text" id="signup-handle" name="handle" value={signupHandle} placeholder="pick a handle"></input>
+          <input onChange={this.onFormChange} type="text" id="signup-password" name="password" value={signupPassword} placeholder="pick a password"></input>
           <input type="submit" value="Sign up"></input>
         </form>
 
