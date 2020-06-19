@@ -8,16 +8,13 @@ This App is not finished! [Website Preview](https://github.com/Tracht/chitterCha
 Challenge
 -------
 Build a front-end single-page-app to interface with this API. [The API documentation is here](https://github.com/makersacademy/chitter_api_backend). 
-The API supports the following interactions:
-* Creating Users [x]
-* Logging in [x]
-* Logging out (in progress)
-* Posting Peeps
-* Viewing all Peeps [x]
-* Viewing individual Peeps
-* Deleting Peeps
-* Liking Peeps
-* Unliking Peeps
+The API supports the following interactions:   
+Completed 
+* Viewing all Tweets, Creating Users, Logging in    
+In progress 
+* Logging out   
+TBD 
+* Posting Tweets, Viewing individual Tweets, Deleting Tweets, Liking Tweets, Unliking Tweets
 
 Planning
 -------
