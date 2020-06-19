@@ -19,6 +19,7 @@ The API supports the following interactions:
 
 Planning
 -------
+* [Learnings](https://github.com/Tracht/chitterChallenge/wiki/Learnings)
 * [Development Process](https://github.com/Tracht/chitterChallenge/wiki/Dev-Process)
 * [User stories](https://github.com/Tracht/chitterChallengeJavaScript/wiki/User-stories)
 * [Diagramming]()
