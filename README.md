@@ -12,7 +12,7 @@ The API supports the following interactions:
 * Completed 
   * View all Tweets, Create Users, Log in    
 * In progress 
-  * Log out   
+  * Log out [see planning here](https://github.com/Tracht/chitterChallenge/wiki/Logout---Planning)
 * TBD 
   * Post Tweets, View individual Tweets, Delete Tweets, Like/Unlike Tweets
 
