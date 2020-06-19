@@ -24,6 +24,16 @@ body {
   text-align: center;
 }
 
+.alert {
+  color: red;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #38A1F3; 
+  font-weight: bold;
+}
+
 /* Tweets Component */ 
 .twitter-posts {
   margin-left: auto;
