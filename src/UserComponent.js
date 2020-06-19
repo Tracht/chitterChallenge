@@ -14,35 +14,54 @@ class User extends React.Component {
     }
   };
 
-  // loginHandler = (event) => {
-  //   event.preventDefault();
-  //   let login = {
-  //     user: {
-  //       handle: this.state.handle,
-  //       password: this.state.password
-  //     }
-  //   }
-  //   fetch('https://chitter-backend-api-v2.herokuapp.com/sessions', {
-  //     method: 'post',
-  //     headers: { 'Content-Type': 'application/json' }, 
-  //     body: JSON.stringify(login),
-  //   })
-  //   .then(response => response.json())
-  //   .then((result) => {
-  //     console.log(result.user_id);
-  //     if (result.user_id !== 77 ) {
-  //       this.setState({ message:  "Wrong handle and/or password combination." })
-  //     } else {
-  //       this.setState({
-  //         user: { id: result.user_id },
-  //         session: { session_key: result.session_key },
-  //         message: "Welcome back."
-  //       })
-  //     }
-  //     console.log(this.state.message);
-  //     console.log(this.state.session.session_key);
-  //   })
-  // }
+  loginHandler = (event) => {
+    event.preventDefault();
+    let handle = {
+      user: {
+        handle: this.state.handle 
+      }
+    }
+    let password = {
+      user: {
+        password: this.state.password
+      }
+    }
+    let login = {
+      session: {
+        handle: handle.user.handle,
+        password: password.user.password
+      }
+    }
+    fetch('https://chitter-backend-api-v2.herokuapp.com/sessions', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/json' }, 
+      body: JSON.stringify(login),
+    })
+    // console.log(login)
+    .then(response => response.json())
+    // .then((response => { console.log(response); console.log("1")}))
+    .then((result) => {
+      console.log(result);
+      if (result.errors != null ) {
+        this.setState({ 
+          alert:  "Wrong handle and/or password combination.", 
+          message: "",
+          successMessage: "",
+      })} else {
+        this.setState({
+          user: { id: result.user_id },
+          session: { session_key: result.session_key },
+          successMessage: "Welcome back.", 
+          message: "", 
+          alert: ""
+        })
+      }
+      console.log(this.state.message);
+      console.log(this.state.user.id);
+      console.log(this.state.session.session_key);
+    })
+    .catch((error) => { console.log(error); console.log("2") })
+  }
 
   signupHandler = (event) => {
     event.preventDefault();
