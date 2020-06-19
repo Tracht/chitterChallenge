@@ -11,7 +11,8 @@ Build a front-end single-page-app to interface with this API. [The API documenta
 The API supports the following interactions:
 * Creating Users [x]
 * Logging in [x]
-* Posting Peeps (in progress)
+* Logging out (in progress)
+* Posting Peeps
 * Viewing all Peeps [x]
 * Viewing individual Peeps
 * Deleting Peeps
