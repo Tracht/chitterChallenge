@@ -19,6 +19,7 @@ The API supports the following interactions:
 
 Planning
 -------
+* [Future improvements](https://github.com/Tracht/chitterChallenge/wiki/Refactor-To-Do's-and-Improvements)
 * [Learnings](https://github.com/Tracht/chitterChallenge/wiki/Learnings)
 * [Development Process](https://github.com/Tracht/chitterChallenge/wiki/Dev-Process)
 * [User stories](https://github.com/Tracht/chitterChallengeJavaScript/wiki/User-stories)
