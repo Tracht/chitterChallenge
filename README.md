@@ -10,7 +10,7 @@ Challenge
 Build a front-end single-page-app to interface with this API. [The API documentation is here](https://github.com/makersacademy/chitter_api_backend). 
 The API supports the following interactions:
 * Creating Users [x]
-* Logging in
+* Logging in [x]
 * Posting Peeps
 * Viewing all Peeps [x]
 * Viewing individual Peeps
