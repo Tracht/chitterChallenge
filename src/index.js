@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomepageHeader from './HomepageHeaderComponent';
-import Tweets from './TweetsComponent';
-import User from './UserComponent';
+import HomepageHeader from './HomepageHeader';
+import Tweets from './Tweets';
+import User from './User';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -27,7 +27,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('tweets'),
 );
-
 
 
 // If you want your app to work offline and load faster, you can change
