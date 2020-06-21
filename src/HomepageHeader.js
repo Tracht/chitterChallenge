@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
-import './UserComponent.js';
-import './TweetsComponent.js';
+import './User.js';
+import './Tweets.js';
 
 class HomepageHeader extends React.Component{
 
