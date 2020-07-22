@@ -1,6 +1,6 @@
 describe('Homepage', () => {
   it('Visits homepage', () => {
-    cy.visit('http://localhost:3000')
+    cy.visit('/')
     cy.contains("Welcome to Twitter")
   });
 });

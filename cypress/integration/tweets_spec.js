@@ -1,6 +1,6 @@
 describe('tweets', () => {
   it('shows tweets', () => {
-    cy.visit('http://localhost:3000')
+    cy.visit('/')
     cy.contains('Likes:')
     cy.contains('tweeted')
     cy.contains('posted on')
